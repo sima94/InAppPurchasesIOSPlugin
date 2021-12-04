@@ -5,4 +5,8 @@
 // each method the plugin supports using the CAP_PLUGIN_METHOD macro.
 CAP_PLUGIN(InAppPurchasesPlugin, "InAppPurchases",
            CAP_PLUGIN_METHOD(echo, CAPPluginReturnPromise);
+           CAP_PLUGIN_METHOD(completeTransactions, CAPPluginReturnPromise);
+           CAP_PLUGIN_METHOD(purchaseProduct, CAPPluginReturnPromise);
+           CAP_PLUGIN_METHOD(finishTransaction, CAPPluginReturnPromise);
+           CAP_PLUGIN_METHOD(fetchReceipt, CAPPluginReturnPromise);
 )
